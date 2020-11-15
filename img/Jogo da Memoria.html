@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memoria</title>
+    
+    
+<script data-dapp-detection="">(function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){return window.__disableDappDetectionInsertion||n(),t}})}})();</script><link rel="stylesheet" href="./Jogo da Memoria_files/style.css"><link href="./Jogo da Memoria_files/css2" rel="stylesheet"></head>
+<body>
+    <div class="fim-de-jogo">
+        <p>Parabéns Você Ganhou!</p>
+        <span>0</span>
+        <p>Foram necessários tentativas</p>
+    </div>
+    <p class="titulo">JOGO DA MEMORIA</p>
+    
+    <main class="jogo-memoria">
+        <div class="card" data-card="bowser" style="order: 6;">
+            <img src="./Jogo da Memoria_files/bowser.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="luigi" style="order: 10;">
+        <img src="./Jogo da Memoria_files/luigi.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="mario" style="order: 11;">
+            <img src="./Jogo da Memoria_files/mario.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="peach" style="order: 4;">
+            <img src="./Jogo da Memoria_files/peach.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="tod" style="order: 7;">
+            <img src="./Jogo da Memoria_files/tod.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="yoshi" style="order: 11;">
+            <img src="./Jogo da Memoria_files/yoshi.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="bowser" style="order: 2;">
+            <img src="./Jogo da Memoria_files/bowser.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="luigi" style="order: 9;">
+        <img src="./Jogo da Memoria_files/luigi.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="mario" style="order: 11;">
+            <img src="./Jogo da Memoria_files/mario.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="peach" style="order: 7;">
+            <img src="./Jogo da Memoria_files/peach.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="tod" style="order: 10;">
+            <img src="./Jogo da Memoria_files/tod.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+        <div class="card" data-card="yoshi" style="order: 4;">
+            <img src="./Jogo da Memoria_files/yoshi.png" alt="face da carta" class="frente-carta">
+            <img src="./Jogo da Memoria_files/box.png" alt="verso da carta" class="verso-carta">
+        </div>
+    </main>
+    <script src="./Jogo da Memoria_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
